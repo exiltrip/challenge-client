@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "chart.js": "^4.4.8",
     "effector": "^23.3.0",
+    "effector-react": "^23.3.0",
     "next": "15.1.7",
     "react": "^19.0.0",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {

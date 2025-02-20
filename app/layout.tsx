@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@shared/styles/file.css";
+import "@shared/styles/globals.css";
 
 import { Navbar } from "@/widgets/Navbar";
 
@@ -8,8 +8,8 @@ import { Navbar } from "@/widgets/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Challenge Generator",
-  description: "Генератор челленджей - сервис, который ставит тебе вызовы, которые ты должен победить!",
+  title: "Challenger",
+  description: "Challenger - сервис, который ставит тебе вызовы!",
 };
 
 export default function RootLayout({

@@ -1,5 +1,5 @@
+import {PersonalChallengesPage} from "@pages/PersonalChallenges";
+
 export default function Page() {
-    return (
-        <div>личный кабинет</div>
-    )
+    return <PersonalChallengesPage />;
 }

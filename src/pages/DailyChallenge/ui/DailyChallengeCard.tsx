@@ -15,20 +15,18 @@ export async function DailyChallengeCard({
                                        isCompleted,
                                    }: DailyChallengeProps) {
     return (
-        <div className="p-4 bg-white rounded shadow">
-            <h1 className="text-xl font-bold text-gray-800 mb-2">
-                Дейли челлендж на сегодня:
-            </h1>
-            <p className="text-gray-800 mb-4">{text}</p>
+        <div className="p-4 bg-white rounded shadow flex flex-col items-center justify-center">
 
-            <p className="mb-4 text-indigo-600">
-                Выполнили сегодня: {completedCount} чел.
-            </p>
-
+            <p className="text-gray-800 mb-4 text-center">{text}</p>
             <CompleteChallengeButton
                 dailyChallengeId={id}
                 isDisabled={isCompleted}
             />
+            <p className="mb-4 text-indigo-500 text-center">
+                Выполнили сегодня: {completedCount} чел.
+            </p>
+
+
         </div>
     );
 }
