@@ -14,6 +14,7 @@ import { fetchInterestsFx } from '@/entities/interests/model';
 import { ActiveChallengesList } from './ActiveChellengesList';
 import { InterestsModal } from './InterestModal';
 import { StatsChart } from './StatsChart';
+import {Container} from "@widgets/Container";
 
 export function PersonalChallengesPage() {
     const challenges = useStore($challenges);
@@ -45,7 +46,7 @@ export function PersonalChallengesPage() {
 
 
     return (
-        <div className="max-w-3xl mx-auto p-4">
+        <Container>
             <h1 className="text-2xl font-bold mb-4 text-indigo-600">
                 Личные челленджи
             </h1>
@@ -86,6 +87,6 @@ export function PersonalChallengesPage() {
                     inProgressData={[1, 1, 2, 2, 1, 3, 2]}
                 />
             </div>
-        </div>
+        </Container>
     );
 }

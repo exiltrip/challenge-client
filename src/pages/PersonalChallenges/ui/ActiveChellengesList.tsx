@@ -30,7 +30,7 @@ export function ActiveChallengesList({isLoading, challenges, completeChellenge,}
             </h2>
             <ul className="list-disc list-inside">
                 {challenges.map((ch) => (
-                    <li key={ch.id} className="mb-2">
+                    <div key={ch.id} className="pl-2 mb-2 rounded-md bg-gray-50 max-sm:flex max-sm:justify-between max-sm:text-sm md:text-nowrap md:w-min lg:text-nowrap lg:w-min xl:w-min xl:text-nowrap">
                         <span>{ch.text}</span>
                         {!ch.done && (
                             <button
@@ -40,7 +40,7 @@ export function ActiveChallengesList({isLoading, challenges, completeChellenge,}
                                 Завершить
                             </button>
                         )}
-                    </li>
+                    </div>
                 ))}
             </ul>
         </div>
