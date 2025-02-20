@@ -1,6 +1,9 @@
 'use client'
 
 export const Logout = () => {
-    localStorage.clear()
-    document.location.reload()
+
+    if (typeof window !== 'undefined') {
+        localStorage.clear()
+        document.location.reload()
+    }
 }

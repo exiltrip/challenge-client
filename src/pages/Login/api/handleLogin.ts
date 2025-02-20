@@ -1,5 +1,4 @@
 'use client'
-import {redirect} from "next/navigation";
 
 export const HandleLogin = (login: string, password: string) => {
 
@@ -7,7 +6,9 @@ export const HandleLogin = (login: string, password: string) => {
     console.log(login, password);
     alert("login")
 
-    localStorage.setItem('token', "123123")
-    localStorage.setItem('isLoggedIn', "true")
-    document.location.href="/"
+    if (typeof window !== 'undefined') {
+        localStorage.setItem('token', "123123")
+        localStorage.setItem('isLoggedIn', "true")
+    }
+    document.location.href = "/"
 }
