@@ -3,6 +3,9 @@
 import { revalidatePath } from 'next/cache';
 
 export async function completeDailyChallenge(challengeId: number) {
+    // заглушка, тк пока что переменная неюз
+    console.log(challengeId);
+
 
     // Здесь надо будет ходить к апи что бы получать дейлик, пока что не оч рабочий вариант
     // await fetch('http/://localhost:8080/daily-challenge/get', {
