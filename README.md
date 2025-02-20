@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Challenge Generator
 
-## Getting Started
+Генератор случайных челленджей для саморазвития, обучения и веселья.
 
-First, run the development server:
+## 🚀 О проекте
+Challenge Generator — это веб-приложение, которое предлагает пользователям случайные челленджи, сгенерированные **GPT-4**, направленные на саморазвитие, спорт, обучение и повседневные полезные привычки.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### ✨ Основные возможности:
+- **Дневной челлендж** — одно задание на день для всех пользователей.
+- **Персональные челленджи** — задания на основе выбранных интересов.
+- **GitHub OAuth (IN DEV)** — быстрый и удобный вход.
+- **Прогресс-бар (IN DEV)** — отслеживание выполненных челленджей.
+
+## 🛠️ Установка и запуск
+
+### 1. Клонирование репозитория
+```sh
+git clone https://github.com/exiltrip/challenge-client.git
+cd challenge-client
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Установка зависимостей
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Запуск локального сервера
+```sh
+npm run dev
+```
+По умолчанию приложение будет доступно по адресу: `http://localhost:3000`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Сборка проекта
+Для продакшн-сборки используй команду:
+```sh
+npm run build
+```
+А затем запусти приложение:
+```sh
+npm start
+```
 
-## Learn More
+## 📌 Технологии
+- **Next.js 15 + Turbopack** — Основной фреймворк/сборщик
+- **Effector** — управление состоянием
+- **TailwindCSS** — стилизация
+- **TypeScript** — типизация
+- **OpenAI API** — генерация челленджей
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 Лицензия
+Этот проект распространяется под лицензией MIT.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
+🎯 **Challenge Generator** — прокачивай себя каждый день!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

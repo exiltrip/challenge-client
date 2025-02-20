@@ -1,5 +1,5 @@
+import {DailyChallengePage} from "@pages/DailyChallenge";
+
 export default function Page() {
-    return (
-        <div>daily challenge </div>
-    )
+    return <DailyChallengePage/>
 }

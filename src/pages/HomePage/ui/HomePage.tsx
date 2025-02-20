@@ -10,7 +10,7 @@ const HomePage = () => {
                 preTitle="Стек"
                 title="Чем был реализован проект?"
             >
-                Кор стек фронтенда - NextJS, TailwindCSS, effector, FSD. Бекенд - go, gin, postgres. Деплой - Docker, Nginx, Linux.
+                Кор стек фронтенда - NextJS, TailwindCSS, effector, FSD. Деплой - Docker, Nginx, Linux.
             </SectionTitle>
             <SectionTitle
                 preTitle="еще чучуть!"

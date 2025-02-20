@@ -1,6 +1,6 @@
 'use client'
+import LoginPage from "@pages/Login";
+
 export default function Page() {
-    return (
-        <div>login page</div>
-    )
+    return <LoginPage/>
 }

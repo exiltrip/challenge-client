@@ -8,7 +8,7 @@ interface DailyChallengeProps {
     isCompleted: boolean;
 }
 
-export function DailyChallengeCard({
+export async function DailyChallengeCard({
                                        id,
                                        text,
                                        completedCount,
@@ -16,8 +16,8 @@ export function DailyChallengeCard({
                                    }: DailyChallengeProps) {
     return (
         <div className="p-4 bg-white rounded shadow">
-            <h1 className="text-xl font-bold text-indigo-600 mb-2">
-                Дейли челлендж сегодня:
+            <h1 className="text-xl font-bold text-gray-800 mb-2">
+                Дейли челлендж на сегодня:
             </h1>
             <p className="text-gray-800 mb-4">{text}</p>
 
