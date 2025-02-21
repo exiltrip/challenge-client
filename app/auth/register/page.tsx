@@ -1,6 +1,6 @@
 'use client'
+import RegisterPage from "@pages/Register";
+
 export default function Page() {
-    return (
-        <div>register page</div>
-    )
+    return <RegisterPage/>
 }

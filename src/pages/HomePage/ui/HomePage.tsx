@@ -4,7 +4,7 @@ import {Container} from "@widgets/Container";
 
 const HomePage = () => {
     return (
-        <Container>
+        <Container className="p-0 xl:p-8">
             <Hero />
             <SectionTitle
                 preTitle="Стек"

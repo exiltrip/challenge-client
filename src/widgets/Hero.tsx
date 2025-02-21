@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const Hero = () => {
     return (
-            <Container className="flex flex-wrap xl:px-0">
+            <Container className="flex flex-wrap justify-between xl:px-0">
                 <div className="flex items-center w-full lg:w-1/2">
                     <div className="max-w-2xl mb-8">
                         <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight">
@@ -45,19 +45,15 @@ export const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex items-center justify-center w-full lg:w-1/2">
-                    <div className="">
                         <Image
                             src={heroImg}
                             width="416"
                             height="417"
                             className={"object-cover"}
-                            alt="Hero Illustration"
+                            alt=""
                             loading="eager"
                             placeholder="blur"
                         />
-                    </div>
-                </div>
             </Container>
     );
 }

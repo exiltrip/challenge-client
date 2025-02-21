@@ -9,13 +9,11 @@ interface CompleteChallengeButtonProps {
 }
 
 export function CompleteChallengeButton({
-                                            dailyChallengeId,
                                             isDisabled,
                                         }: CompleteChallengeButtonProps) {
     const handleClick = async () => {
-        // Вызываем server action, после чего некст сам дернёт revalidatePath
-        await completeDailyChallenge(dailyChallengeId);
-        await alert("дейлик завершен")
+        await completeDailyChallenge();
+        await alert("дейлик завершен! на данный момент грузятся мок данные, поэтому счетчик не был обновлен.")
     };
 
     return (

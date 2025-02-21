@@ -1,16 +1,13 @@
-'use server';
-
-import { revalidatePath } from 'next/cache';
-
-export async function completeDailyChallenge(challengeId: number) {
-    // заглушка, тк пока что переменная неюз
-    console.log(challengeId);
+'use client';
 
 
-    // Здесь надо будет ходить к апи что бы получать дейлик, пока что не оч рабочий вариант
+export async function completeDailyChallenge() {
+
+
     // await fetch('http/://localhost:8080/daily-challenge/get', {
     //   method: 'POST',
     //   body: JSON.stringify({ id: challengeId, userId: 1 })
     // });
-    revalidatePath('/daily-challenge');
+    console.log('Complete Daily Challenge...');
+    return("ok")
 }

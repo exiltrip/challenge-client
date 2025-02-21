@@ -1,5 +1,5 @@
 import React from 'react';
-import { CompleteChallengeButton } from '@pages/DailyChallenge/ui/ComepleteButton';
+import { CompleteChallengeButton } from '@pages/DailyChallenge/ui/CompleteButton';
 
 interface DailyChallengeProps {
     id: number;
